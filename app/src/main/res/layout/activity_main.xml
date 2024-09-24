@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kebab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bcg">
+
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bcg"
+        >
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff2b8b57"
+            android:padding="10dp"
+            android:text="Wizyta u weterynarza"
+            android:textAlignment="textStart"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/inputgodnosc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Imię i nazwisko właściciela"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top" />
+
+        <TextView
+            android:id="@+id/gatunek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gatunek"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputgodnosc" />
+
+        <!-- NIE WIME JAK ZROBIC ABY TO GOWNO BYŁO DO BOKU JAK NA OBRAZKU JAPIERDOLE 😭😭😭😭 -->
+        <ListView
+            android:id="@+id/listviu"
+            style="@style/Widget.AppCompat.ListView.Menu"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_margin="0dp"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/holo_orange_dark"
+            android:padding="0dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/karwa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sex"
+            android:textColor="#000000"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
